@@ -1,20 +1,14 @@
-# app
+# App de listagem de produtos
 
-## Build Setup
+Este projeto é uma app em vue/nuxt de crud simples 
 
-```bash
-# install dependencies
-$ yarn install
+# Requistos
+ - É necessário ter o docker compose instalado 
 
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+# Instalação
+ Somente é necessário configurar as variáveis de ambiente no arquivo .env como no arquivo .env.example e executar o comando.
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+   $ docker-compose up
+```
+ 
+ Por fim poderá consumir a api em http://localhost:4000.
