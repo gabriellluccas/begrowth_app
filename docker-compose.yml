@@ -1,0 +1,16 @@
+version: "3.8"
+
+services: 
+  app:
+      container_name: app_node
+      build: 
+        context: .
+        dockerfile: Dockerfile
+      restart: always
+      env_file: .env
+      ports: 
+        - ${APP_PORT}:${APP_PORT}
+      volumes:
+        - .:/usr/app
+      working_dir: /usr/app
+      command: yarn dev
